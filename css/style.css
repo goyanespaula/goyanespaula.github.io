@@ -79,7 +79,7 @@ em {
 }
 
 .info-col {
-  padding: 1.5rem 0.5rem;
+  padding: 1.25rem 0.5rem;
   width: 50%;
   justify-content: space-between;
 }
@@ -93,6 +93,12 @@ em {
 
 .page {
   padding: 50px 1.5rem 0;
+}
+
+@media (max-width: 400px) {
+  .page {
+    padding: 50px 0;
+  }
 }
 
 .row-center {
@@ -188,10 +194,11 @@ video {
 /*ABOUT ME STYLES*/
 
 .aboutme-row {
+  margin: auto;
   max-width: 1000px;
   box-sizing: border-box;
   box-shadow: 0px 10px 15px 8px rgba(0, 0, 0, 0.2);
-  padding: 1.5rem 3.25rem;
+  padding: 1.75rem 3rem;
   justify-content: center;
 }
 
@@ -269,28 +276,7 @@ video {
   margin: 1rem;
 }
 
-@media (min-width: 2000px) {
-  .portfolio-grid {
-    grid-column-gap: 5.5rem;
-    grid-row-gap: 3rem;
-  }
-}
-
-@media (max-width: 1200px) {
-  .portfolio-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-}
-
-@media (max-width: 780px) {
-  .portfolio-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-  }
-}
-
-/*Styling for slide-up effect*/
+/* Styling for slide-up effect */
 
 .card {
   /* border: solid white 2px; */
@@ -298,14 +284,14 @@ video {
   position: relative;
   overflow: hidden;
   width: 350px;
-  height: 250px;
+  height: 225px;
   box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.3);
 }
 
 .card img {
   object-fit: cover;
   width: 350px;
-  height: 250px;
+  height: 225px;
   transition: all 0.3s ease-out;
 }
 
@@ -336,18 +322,36 @@ video {
   bottom: 0px;
 }
 
-/*smaller thumnails at 2 column row*/
-@media (max-width: 1200px) {
-  .card {
-    width: 350px;
-    height: 225px;
+/* responsive cards */
+@media (min-width: 2000px) {
+  .portfolio-grid {
+    grid-column-gap: 5.5rem;
+    grid-row-gap: 3rem;
   }
 }
 
-/*smallest thumbnails at one column rows*/
+@media (max-width: 1200px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .card,
+  .card img {
+    width: 325px;
+    height: 210px;
+  }
+}
+
 @media (max-width: 780px) {
-  .card {
-    width: 350px;
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 2rem;
+  }
+  .card,
+  .card img {
+    width: 300px;
     height: 200px;
   }
 }
@@ -365,14 +369,22 @@ video {
 }
 
 .contact-row {
-  max-width: 1000px;
-  padding: 2rem 3.25rem;
+  margin: auto;
+  max-width: 1100px;
+  padding: 2rem;
   justify-content: center;
 }
 
 #contact img {
   width: 400px;
   align-self: center;
+}
+
+@media (max-width: 400px) {
+  #contact img {
+    width: 320px;
+    align-self: center;
+  }
 }
 
 #contact h6 {
