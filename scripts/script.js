@@ -1,13 +1,15 @@
-function typeIt(text, className) {
+function typeIt(text, className, delay = 0, rate = 150) {
   var count = -1;
-  var rate = 150;
   var chars = text.split("");
-  setInterval(function() {
-    $(className).append(chars[++count]);
-  }, rate);
+  setTimeout(() => {
+    setInterval(function() {
+      $(className).append(chars[++count]);
+    }, rate);
+  }, delay);
 }
 
-typeIt("Paula Goyanes", ".typing");
+typeIt("Paula ", ".first-typing");
+typeIt("Goyanes", ".last-typing", 1000);
 
 $(document).ready(function() {
   var $main = $("#main");

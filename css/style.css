@@ -114,6 +114,23 @@ em {
   display: flex;
 }
 
+.full-name {
+  min-height: 115px;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .full-name {
+    min-height: 190px;
+  }
+  .hide {
+    display: block;
+  }
+}
+
 /* NAV STYLES */
 .nav-bar {
   position: fixed;
