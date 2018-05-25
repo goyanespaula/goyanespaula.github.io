@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paula Goyanes</title>
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:100,200,400|Sail" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
   <link href="css/style.css" type="text/css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
@@ -15,13 +14,21 @@
   <header id="main">
 <!--BEGIN NAVIGATION-->
     <nav>
-      <img class="nav-logo" src="http://res.cloudinary.com/paulywag/image/upload/v1527207024/nav-logo.png" alt="Paula Goyanes logo">
-      <ul class="flex">
-        <li><a href="#home"><h6>HOME</h6></a></li>
-        <li><a href="#about"><h6>ABOUT</h6></a></li>
-        <li><a href="#portfolio"><h6>PORTFOLIO</h6></a></li>
-        <li><a href="#contact"><h6>CONTACT</h6></a></li>
-      </ul>
+      <section class="nav-bar">
+        <img class="nav-logo" src="http://res.cloudinary.com/paulywag/image/upload/v1527207024/nav-logo.png" alt="Paula Goyanes logo">
+        <ul class="flex nav-horizontal">
+          <li><a href="#home"><h6>HOME</h6></a></li>
+          <li><a href="#about"><h6>ABOUT</h6></a></li>
+          <li><a href="#portfolio"><h6>PORTFOLIO</h6></a></li>
+          <li><a href="#contact"><h6>CONTACT</h6></a></li>
+        </ul> 
+        <a class="nav-hamburger"><i class="fas fa-bars"></i></a> 
+        <ul class="nav-dropdown">
+          <li><a href="#home"><h6>HOME</h6></a></li>
+          <li><a href="#about"><h6>ABOUT</h6></a></li>
+          <li><a href="#portfolio"><h6>PORTFOLIO</h6></a></li>
+          <li><a href="#contact"><h6>CONTACT</h6></a></li>
+        </ul>
     </nav>
 <!--BEGIN LANDING-->
     <div class="contain" id="home">
@@ -84,7 +91,7 @@
         <div class="col-md-6 col-lg-4 flex row-center">
           <div class="card">
               <a href="https://www.coursereport.com/" target="_blank"><img src="https://res.cloudinary.com/paulywag/image/upload/v1527207866/course-report.png" alt="thumbnail of the course report site">
-                <div class="caption">Course Report<p>As a contract engineer for course report, I worked to refactor the matching algorith, create their new footer, and much more...! (check out my <a href="docs/Paula-Goyanes-Resume.pdf" target="_blank" class="underline">resume</a> for details)</p></div></a>
+                <div class="caption">Course Report<p>As a contract engineer for Course Report, I worked to rewrite the matching algorith, make styling changes, and much more...! (check out my <a href="docs/Paula-Goyanes-Resume.pdf" target="_blank" class="underline">resume</a> for details)</p></div></a>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 flex row-center">
@@ -96,7 +103,7 @@
         <div class="col-md-6 col-lg-4 flex row-center">
           <div class="card">
               <a href="https://github.com/alexabush/LinkedList" target="_blank"><img src="https://res.cloudinary.com/paulywag/image/upload/v1527207881/linked-list.png" alt="thumbnail for a job sharing app">
-                <div class="caption">LinkedList API<p>A backend for a LinkedIn/Angel List clone<br/> Where companies, users, and jobs can interact</p></div></a>
+                <div class="caption">LinkedList API<p>A backend for a LinkedIn/Angel List clone. Where companies, users, and jobs can interact</p></div></a>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 flex row-center">
