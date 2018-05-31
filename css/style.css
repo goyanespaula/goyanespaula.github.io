@@ -360,7 +360,7 @@ video {
   transition: all 0.3s ease-out;
 }
 
-.caption {
+.card .caption {
   left: 0;
   position: absolute;
   width: 85%;
@@ -380,6 +380,7 @@ video {
 }
 
 .card:hover .caption {
+  top: auto;
   bottom: 0px;
 }
 
