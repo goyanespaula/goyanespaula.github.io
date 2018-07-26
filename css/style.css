@@ -17,6 +17,11 @@ a {
   transition: all 0.5s;
 }
 
+figure {
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
   font-family: Sail, cursive;
   font-weight: 500;
@@ -337,7 +342,6 @@ video {
 }
 
 /* Styling for slide-up effect */
-
 .card {
   position: relative;
   overflow: hidden;
