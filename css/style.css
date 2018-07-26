@@ -31,14 +31,6 @@ h2 {
   margin: 0;
 }
 
-h3 {
-  font-family: Montserrat, sans-serif;
-  font-weight: 100;
-  color: #84d4d8;
-  font-size: 2rem;
-  margin: 0;
-}
-
 h4 {
   font-family: Montserrat, serif;
   font-weight: 100;
@@ -114,7 +106,7 @@ em {
   display: flex;
 }
 
-.full-name {
+.landing-text_name {
   min-height: 115px;
 }
 
@@ -247,7 +239,7 @@ video {
 
 /*QUOTE STYLES*/
 
-.quote-container {
+.container--quote {
   color: white;
   background-color: #f04d47;
   line-height: 25px;
@@ -260,7 +252,7 @@ video {
 
 /*ABOUT ME STYLES*/
 
-.aboutme-row {
+.row--about-me {
   margin: auto;
   max-width: 1000px;
   box-sizing: border-box;
@@ -269,7 +261,7 @@ video {
   justify-content: center;
 }
 
-.avatar {
+.info-col_avatar {
   max-height: 350px;
   padding: 4px;
   border-radius: 50%;
@@ -277,7 +269,7 @@ video {
   border: 2px solid #ccc;
 }
 
-.icons-row {
+.info-col_icons-row {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -293,16 +285,16 @@ video {
   font-size: 2.5rem;
 }
 
-.about-description {
+.info-col_about {
   margin: 1.25rem 0;
 }
 
-.about-text {
+.info-col_about_text {
   line-height: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.about-text span {
+.info-col_about_textspan {
   font-size: 1.5rem;
 }
 
@@ -311,13 +303,13 @@ video {
 }
 
 @media (max-width: 800px) {
-  .aboutme-row {
+  .row--about-me {
     flex-direction: column;
   }
 }
 
 @media (min-width: 1600px) {
-  .aboutme-row {
+  .row--about-me {
     max-width: 1200px;
   }
 }
@@ -327,7 +319,7 @@ video {
   padding-bottom: 1rem;
 }
 
-.portfolio-row {
+.row--portfolio {
   color: white;
   background-color: #f04d47;
   padding: 3.5rem 0;
@@ -335,7 +327,7 @@ video {
   box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
 }
 
-.portfolio-grid {
+.portfolio_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -386,14 +378,14 @@ video {
 
 /* responsive cards */
 @media (min-width: 2000px) {
-  .portfolio-grid {
+  .portfolio_grid {
     grid-column-gap: 5.5rem;
     grid-row-gap: 3rem;
   }
 }
 
 @media (max-width: 1200px) {
-  .portfolio-grid {
+  .portfolio_grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
@@ -409,7 +401,7 @@ video {
 }
 
 @media (max-width: 780px) {
-  .portfolio-grid {
+  .portfolio_grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-column-gap: 0;
@@ -435,44 +427,46 @@ video {
   padding: 50px 0 0;
 }
 
-.contact-container {
+.container--contact {
   background-color: #51b3bf;
   width: 100%;
   color: #f9f5ea;
 }
 
-.contact-row {
+.row--contact {
   margin: auto;
   max-width: 1100px;
   padding: 2rem;
   justify-content: center;
 }
 
-#contact img {
+#contact_gif {
   width: 400px;
   align-self: center;
 }
 
+.contact_text {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @media (max-width: 400px) {
-  #contact img {
+  #contact_gif {
     width: 320px;
     align-self: center;
   }
 }
 
-#contact h6 {
-  margin-top: 1.1rem;
-  line-height: 25px;
-}
-
 @media (max-width: 800px) {
-  .contact-row {
+  .row--contact {
     flex-direction: column;
   }
 }
 
 @media (min-width: 1600px) {
-  .contact-row {
+  .row--contact {
     max-width: 1400px;
   }
 }

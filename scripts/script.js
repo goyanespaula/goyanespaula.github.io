@@ -8,8 +8,8 @@ function typeIt(text, className, delay = 0, rate = 150) {
   }, delay);
 }
 
-typeIt("Paula ", ".first-typing");
-typeIt("Goyanes", ".last-typing", 1000);
+typeIt("Paula ", "#first-typing");
+typeIt("Goyanes", "#last-typing", 1000);
 
 $(document).ready(function() {
   var $main = $("#main");
