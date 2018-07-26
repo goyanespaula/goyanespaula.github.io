@@ -305,6 +305,7 @@ video {
 @media (max-width: 800px) {
   .row--about-me {
     flex-direction: column;
+    padding: 1.75rem 2rem;
   }
 }
 
