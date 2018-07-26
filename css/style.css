@@ -341,13 +341,11 @@ video {
   margin: 1rem;
 }
 
-/* Styling for slide-up effect */
 .card {
-  position: relative;
-  overflow: hidden;
   width: 350px;
-  height: 225px;
   box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  color: black;
 }
 
 .card img {
@@ -355,30 +353,38 @@ video {
   width: 350px;
   height: 225px;
   transition: all 0.3s ease-out;
+  border-bottom: 2px solid gray;
 }
 
-.card .caption {
-  left: 0;
-  position: absolute;
-  width: 85%;
-  top: 165px;
-  background: rgba(240, 77, 71, 0.9);
-  padding: 0px 10px 0px 15px;
-  font-size: 18px;
+.card_caption {
+  padding: 0.75rem 1.25rem 1rem;
+}
+
+.card_caption h3 {
   text-transform: uppercase;
-  padding-top: 10px;
-  transition: all 0.3s ease-out;
+  margin: 0 0 2px;
 }
 
-.caption p {
+.card_caption p {
   font-size: 15px;
   line-height: 23px;
   text-transform: none;
 }
 
-.card:hover .caption {
-  top: auto;
-  bottom: 0px;
+button {
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+  margin-right: 0.25rem;
+  outline: none;
+  border: 2px solid #f04d47;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f04d47;
+  color: white;
 }
 
 /* responsive cards */
@@ -394,14 +400,12 @@ video {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
-  .card,
+  .card {
+    width: 325px;
+  }
   .card img {
     width: 325px;
     height: 210px;
-  }
-
-  .caption {
-    top: 150px;
   }
 }
 
@@ -412,17 +416,12 @@ video {
     grid-column-gap: 0;
     grid-row-gap: 2rem;
   }
-  .card,
+  .card {
+    width: 300px;
+  }
   .card img {
     width: 300px;
     height: 200px;
-  }
-  .caption {
-    width: 100%;
-    height: auto;
-    padding: 0.5rem;
-    top: auto;
-    bottom: 0px;
   }
 }
 
